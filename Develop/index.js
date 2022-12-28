@@ -3,6 +3,9 @@
 cconst inquirer = require('inquirer');
 const fs = require('fs');
 
+// Node v10+ includes a promises module as an alternative to using callbacks with file system methods.
+const { writeFile } = require('fs').promises;
+
 // TODO: Create an array of questions for user input
 const questions = [{
   type: 'input',
@@ -48,45 +51,23 @@ const questions = [{
 function writeToFile(fileName, data) {}
 
 //Writing to file
-fs.writeFile('README.MD', generateMarkdown(answers), (err) => 
-    err ? console.error(err) : console.log('Success!')
+fs.writeFile('README.md', generateMarkdown(answers), (err) => 
+    err ? console.error(err) : console.log('Successfully written to README.md')
 );
 
+
+
+// TODO: Create a function to initialize app
 const init = () => {
   promptUser()
     // Use writeFile method imported from fs.promises to use promises instead of
     // a callback function
-    .then((answers) => writeFile('index.html', generateHTML(answers)))
-    .then(() => console.log('Successfully wrote to index.html'))
+    .then((answers) => writeFile('README.md', generateMD(answers)))
+    .then(() => console.log('Successfully wrote to README.md'))
     .catch((err) => console.error(err));
 };
-
-init();
-
-// TODO: Create a function to initialize app
-function init() {}
 
 // Function call to initialize app
 init();
 
 
-
-.then((answers) => {
-  const htmlPageContent = generateHTML(answers);
-
-  fs.writeFile('index.html', htmlPageContent, (err) =>
-    err ? console.log(err) : console.log('Successfully created index.html!')
-  );
-});
-
-// Bonus using writeFileSync as a promise
-const init = () => {
-  promptUser()
-    // Use writeFile method imported from fs.promises to use promises instead of
-    // a callback function
-    .then((answers) => writeFile('index.html', generateHTML(answers)))
-    .then(() => console.log('Successfully wrote to index.html'))
-    .catch((err) => console.error(err));
-};
-
-init();

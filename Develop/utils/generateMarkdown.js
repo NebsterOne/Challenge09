@@ -69,7 +69,7 @@ ${data.description}
   > ${data.usage}
   
   ## Contributing
-  > ${data.ontributing}
+  > ${data.contributing}
   
   ## Test 
   To test the application, please follow the below:

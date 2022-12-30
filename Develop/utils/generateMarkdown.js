@@ -69,7 +69,7 @@ ${data.description}
   > ${data.usage}
   
   ## Contributing
-  > ${data.contributing}
+  > ${data.ontributing}
   
   ## Test 
   To test the application, please follow the below:
@@ -80,7 +80,7 @@ ${data.description}
   > Should you have any questions, please send email to ${data.email}. 
   
   ## Github
-  > https://github.com/${data.username}
+  > https://github.com/${data.github}
   
   
   ## License 

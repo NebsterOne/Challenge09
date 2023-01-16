@@ -23,7 +23,7 @@ const promptUser = () => {
     {
       type: "input",
       name: "installationCmd",
-      message: "What command should be rune to install dependencies?",
+      message: "What command should be run to install dependencies?",
     },
     {
       type: "input",

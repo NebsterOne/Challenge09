@@ -51,6 +51,7 @@ ${data.description}
 ## Table of Contents
   
   * [Installation](#installation)
+  * [Video Preview](#video-preview)
   * [Usage](#usage)
   * [Contributing](#contributing)
   * [Test](#test)
@@ -64,7 +65,12 @@ ${data.description}
   \`\`\`
   ${data.installationCmd}
   \`\`\`
+
+
+  ## Video preview
+  [Click to watch the video](${data.video})
   
+ 
   ## Usage
   > ${data.usage}
   
@@ -78,6 +84,7 @@ ${data.description}
   \`\`\`
   ## Questions
   > Should you have any questions, please send email to ${data.email}. 
+  
   
   ## Github
   > https://github.com/${data.github}

@@ -27,6 +27,11 @@ const promptUser = () => {
     },
     {
       type: "input",
+      name: "video",
+      message: "Where is the location of walk throught video?",
+    },
+    {
+      type: "input",
       name: "test",
       message: "What command should be run to run tests?",
     },

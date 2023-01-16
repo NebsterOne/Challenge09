@@ -7,11 +7,12 @@
 
 
 ## Desscription
-testing2
+Testing 
 
 ## Table of Contents
   
   * [Installation](#installation)
+  * [Video Preview](#video-preview)
   * [Usage](#usage)
   * [Contributing](#contributing)
   * [Test](#test)
@@ -23,25 +24,31 @@ testing2
   To install necesary dependencies, run the following command:
   
   ```
-  nene
+  npm
   ```
+
+
+  ## Video preview
+  [Click to watch the video](GDrive)
   
+ 
   ## Usage
-  > adasda sd
+  > all
   
   ## Contributing
-  > asdasdas dasd asdasd
+  > everything
   
   ## Test 
   To test the application, please follow the below:
   ```
-  asdasda
+  node
   ```
   ## Questions
-  > Should you have any questions, please send email to fdg@com. 
+  > Should you have any questions, please send email to email@. 
+  
   
   ## Github
-  > https://github.com/dasda@
+  > https://github.com/ned
   
   
   ## License 
